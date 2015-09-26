@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>reveal.js - The HTML Presentation Framework</title>
+  <meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+  <meta name="author" content="Hakim El Hattab">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" href="css/reveal.min.css">
+  <link rel="stylesheet" href="css/theme/night.css" id="theme">
+  <!-- For syntax highlighting -->
+  <link rel="stylesheet" href="lib/css/zenburn.css">
+  <!-- If the query includes 'print-pdf', include the PDF print sheet -->
+  <script>
+  if (window.location.search.match(/print-pdf/gi)) {
+    var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = 'css/print/pdf.css';
+    document.getElementsByTagName('head')[0].appendChild(link);
+  }
+  </script>
+  <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+  <style>
+  strong {
+    color: #e7ad52;
+    font-weight: normal;
+  }
+
+  .reveal pre code {
+    padding-left: 20px;
+  }
+  </style>
+</head>
+
+<body>
+  <div class="reveal">
+    <!-- Any section element inside of this container is displayed as a slide -->
+    <div class="slides">
+      <section>
+        <section>
+          <h1>TDD across the stack</h1>
+          <h3>for the full stack developer</h3>
+          <p>
+            <small>Created by <a href="http://github.com/saurshaz">Saurabh Sharma</a> / <a href="http://about.me/saurshaz">@saurshaz</a></small>
+          </p>
+        </section>
+        <section>
+          <p> Introduction </p>
+        </section>
+      </section>
+      <section>
+        <section>
+          <h2>Survey</h2>
+          <p>&darr;</p>
+        </section>
+        <section>
+          <h3> Fans of TDD ? </h3>
+          <p>&darr;</p>
+        </section>
+        <section>
+          <h3> Practice TDD ? </h3>
+          <p>&darr;</p>
+        </section>
+        <section>
+          <p>Why tests ? </p>
+          <p>A language thing ? </p>
+          <p>Developer psychology ? </p>
+          <a href="http://alistapart.com/article/writing-testable-javascript"> Deck </a>
+          <p>&darr;</p>
+        </section>
+        <section>
+            <p> Allen Kelly's claim on TDD and unemployability in 2022 <a href="http://allankelly.blogspot.in/2014/01/programmers-without-tdd-will-be.html"> blog </a></p>
+            <br>
+            <pre>By 2022 it will be not be possible to get a professional programming job if you do not practice TDD routinely.</pre>
+            <br>
+
+            <p>&darr;</p>
+        </section>
+        <section>
+            <p> A different take - DT in sync <a href="https://www.linkedin.com/pulse/20141003153541-1728259-the-fallacy-of-test-driven-development-tdd" > link </a></p>
+            <pre><h2>Ultimately what you are looking for is an extremely solid development life-cycle, and TDD does not give that to you in totality. Breaking it down into four simple steps will get you a long way:</h2></pre>
+            <ul>
+            <li>Gather requirements & write user stories or use cases (or add these to the backlog if you are using that approach)</li>
+            <li>Allow developers to write code and unit tests simultaneously (not write code based on tests... things change)</li>
+            <li>Implement a monitor to identify code base changes</li>
+            <li>When things change, run the unit tests/macros to confirm things are functioning properly.</li>
+            </ul>
+        </section>
+        </section>
+        <section>
+        <section>
+          <p>Developer psychology ? </p>
+          <p> Don’t they(tests) take extra time of developer ? </p>
+          <p>&darr;</p>
+        </section>
+        <section>
+          <p> Really? do they ? </p>
+          <p> Think long term investments </p>
+          <hr>
+          <ul>
+          <li> Maintenance is an inevitable and unwelcome(for most geeks) phase in every project</li></ul>
+        </section>
+      </section>
+      <section>
+            <h2> Related stuff </h2>
+            <ul>
+          <li>Any layer :: Debugging is your best friend, console is a one-night friend (sort of)</li>
+          <li>making testing more efficient and idempotent - Software is obidient!!</li>
+            <li>testing across the stack, why leave out the frontend as stepchild ?
+            (Test your JS, UI, DOM behaviour, Web Components )</li>
+            <li>Can they be done at any Layer ?
+            <p>Absolutely :: We all are anyways testing (manually at most times)</p></li></ul>
+      </section>
+      <section>
+        <section>
+          <h2>How we'll get there</h2>
+          <p>&darr;</p>
+        </section>
+
+        <section>
+          <h2>Practical Example</h2>
+          <p>Let's look at a simplistic example which involves all stacks</p>
+        </section>
+        <section>
+        <p> Let us teh codez :-)</p>
+        <p><a href="http://full-stack-testing.formidablelabs.com/"> github </a></p>
+      </section>
+      </section>
+      <section>
+        <section><h2>Testing Workflow</h2>
+            <ul>
+            <li>Types of testing</li>
+            <li>Server,Client,Functional/Integration,E2E</li>
+            <li>Purpose of each testing shall be clear</li>
+            <li>TDD or Tests to Support ?</li>
+        </section>
+
+        <section>
+          <h2>Tools - Popular F/Ws and tools for each layer</h2>
+          <ul>
+            <li>Many on the park (JS)</li>
+            <li>Mocha, Jasmine, Jest, WCT ...</li>
+            <li>Protractor, Saucelabs, ghostRunner, (Selenium behind most E2E) ...</li>
+            <li>Use Faker, fetch, superagent etc. ...</li>
+            <li>Supertest + karma + Mocha + selenium is one stack only</li>
+            <li>Tests gain from well documented APIs Postman collections/Swagger/RAML is a big plus when starting ...</li>
+          </ul>
+        </section>
+        <section>
+            <h2>Hinderances - on server end and client</h2>
+            <ul>
+            <li>3rd party API calls (Oauth/API needing randomness auth credentials)</li>
+            <li>Authentication confirmations (third party systems - mocking/stubs needed) . Any suggestions.</li>
+            <li>E2E testing with a confirmation email being opened from gmail in the flow</li></ul>
+        </section>
+      </section>
+      <section>
+        <h2>Conclusion</h2>
+      </section>
+      <section>
+        <h2>Thanks!</h2>
+        <p>
+          <small>Created by <a href="http://github.com/saurshaz">Saurabh Sharma</a> / <a href="http://about.me/saurshaz">@saurshaz</a></small>
+        </p>
+      </section>
+      <section>
+        <h3>Questions?</h3>
+      </section>
+    </div>
+  </div>
+  <script src="lib/js/head.min.js"></script>
+  <script src="js/reveal.min.js"></script>
+  <script>
+  // Full list of configuration options available here:
+  // https://github.com/hakimel/reveal.js#configuration
+  Reveal.initialize({
+    controls: true,
+    progress: true,
+    history: true,
+    center: true,
+
+    theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+    transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/fade/none
+
+    // Parallax scrolling
+    // parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+    // parallaxBackgroundSize: '2100px 900px',
+
+    // Optional libraries used to extend on reveal.js
+    dependencies: [{
+      src: 'lib/js/classList.js',
+      condition: function() {
+        return !document.body.classList;
+      }
+    }, {
+      src: 'plugin/markdown/marked.js',
+      condition: function() {
+        return !!document.querySelector('[data-markdown]');
+      }
+    }, {
+      src: 'plugin/markdown/markdown.js',
+      condition: function() {
+        return !!document.querySelector('[data-markdown]');
+      }
+    }, {
+      src: 'plugin/highlight/highlight.js',
+      async: true,
+      callback: function() {
+        hljs.initHighlightingOnLoad();
+      }
+    }, {
+      src: 'plugin/zoom-js/zoom.js',
+      async: true,
+      condition: function() {
+        return !!document.body.classList;
+      }
+    }, {
+      src: 'plugin/notes/notes.js',
+      async: true,
+      condition: function() {
+        return !!document.body.classList;
+      }
+    }]
+  });
+  </script>
+</body>
+
+</html>

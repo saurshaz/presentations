@@ -1,0 +1,83 @@
+Prettier components - Core and Paper Elements (Fe, Ne, Pl etc groups)
+
+    - Unit testing Polymer  components https://medium.com/@granze/polymer-unit-testing-d6a69910dc31
+    - Example apps - Train to thrill, poly-air, poly-mail etc
+- Writing 'Pure' Components. Conventions to follow.
+- Way to follow :: Testing :: WCT, Events to communicate, Content portion v/s element internals ?
+- To Follow - Eric, Addy, Rob and other geeks
+- More related work - Why Browser is competing with Native ? Service Worker and future.
+- React philosophy and my views (Clipboard story, Object.observe)
+
+- Web Components :: Why and What ? (5)
+
+What is the web we saw
+Web 2.0
+Web of today (thin servers, more client side stuff, more power on browser)
+
+Why Web Components ?
+For semantic - readable web, remember XML ?
+Why Polymer ? Other alternative is x-tags, bosanic etc.
+
+- Polymer (8 + 2)
+
+- Web Components :: Why and What ?
+
+    - All power of JS
+    - Inheritence, abstraction all proven concepts adopted
+    - Different implementations and what's special with Polymer.
+    - Rob Dodson explains Polymer here     (each concept introduced 0.5.5 v)
+    - Addy  explains Components to save web (https://speakerdeck.com/addyosmani/componentize-the-web-back-to-the-browser)
+    - New in v1.0 http://slides.com/jamesmilner/fullstackjs#/12
+    - Web Components today and tomorrow, What they are, Why shall we care ?
+Polymer 1.0 - 1 http://www.slideshare.net/HendrikEbbers/web-components-polymer-10-webinale-berlin?qid=cd3d9228-4388-41a7-b529-ebb19fa81afb&v=qf1&b=&from_search=1 (Hendrik Ebbers)
+    - Intro to Polymer 1.0 - 2 http://www.slideshare.net/MariaClaraSantana1/polymer-10-easier-faster-better?related=1
+    - Material Design  - Addy’s deck https://speakerdeck.com/addyosmani/material-design-for-the-web
+    - 0.5.5 v/s 1.0
+    - React and Polymer
+    - There's an element for 'that' approach
+    - Examples - Poly-air, poly-gmail, poly, train to thrill, dolphin one , google io 15  etc
+
+    - How we start coding a Polymer App (10 + 4)
+
+    - https://developers.google.com/web/tools/polymer-starter-kit/
+
+        - http://polymerelements.github.io/app-layout-templates/
+        - https://github.com/GoogleWebComponents
+    - Clone,setup and run
+    - gulp serve
+        - Start with a basic element
+        - Make it advanced
+            - Start with a basic usable listing element
+            - abstract it in a way it becomes reusable
+            - list of songs
+            - list of items to shop
+                - Reusability
+                - encapsulation
+                - Abstraction
+            - shady v/s shadow DOM ?
+
+
+    - Available elements - https://elements.polymer-project.org/
+
+        - Component Kitchen https://customelements.io/
+        - Using a component from there example
+        - https://github.com/GoogleWebComponents
+
+
+    - Mobile app using Polymer code
+        - wrap as installable, use cordova (https://github.com/saurshaz/polymer-one-cordova)
+        - Minus side, terribly slow v/s native.same as ionic or any other phone gap/cordova technology
+
+
+    - Optimization concepts
+        - Vulcanization (HTML imports)
+        - Polymer.imports
+        - ServiceWorkers Platinum components (http://www.html5rocks.com/en/tutorials/service-worker/introduction/)
+            - A service worker is a script that is run by your browser in the background, separate from a web page, opening the door to features which don't need a web page or user interaction. In the future this will include
+
+                - push messages,
+                - background sync,
+                - and geofencing,
+                - but the first feature it will launch with is the ability to intercept and handle network requests, including programmatically managing a cache of responses.
+        - Push Messaging
+        - shady to shadow DOM

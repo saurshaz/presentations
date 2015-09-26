@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>reveal.js - The HTML Presentation Framework</title>
+  <meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+  <meta name="author" content="Hakim El Hattab">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" href="css/reveal.min.css">
+  <link rel="stylesheet" href="css/theme/night.css" id="theme">
+  <!-- For syntax highlighting -->
+  <link rel="stylesheet" href="lib/css/zenburn.css">
+  <!-- If the query includes 'print-pdf', include the PDF print sheet -->
+  <script>
+  if (window.location.search.match(/print-pdf/gi)) {
+    var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = 'css/print/pdf.css';
+    document.getElementsByTagName('head')[0].appendChild(link);
+  }
+  </script>
+  <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+  <style>
+  strong {
+    color: #e7ad52;
+    font-weight: normal;
+  }
+
+  .reveal pre code {
+    padding-left: 20px;
+  }
+  </style>
+</head>
+
+<body>
+  <div class="reveal">
+    <!-- Any section element inside of this container is displayed as a slide -->
+    <div class="slides">
+      <section>
+        <h1>Web Components with Polymer</h1>
+        <h3>The future of web development?</h3>
+        <h3>Productivity Boost ?</h3>
+      </section>
+      <section>
+        <p>
+          <small>Created by <a href="http://github.com/saurshaz">Saurabh Sharma</a> / <a href="http://about.me/saurshaz">@saurshaz</a></small>
+        </p>
+      </section>
+      <section>
+        <p> Introduction </p>
+      </section>
+      </section>
+      <section>
+        <section>
+          <h2>Survey</h2>
+          <p>&darr;</p>
+        </section>
+        <section>
+          <h3> How cool is the Web ? </h3>
+          <p>&darr;</p>
+        </section>
+        <section>
+          <h3> Why shall the developer care ? </h3>
+          <p>&darr;</p>
+        </section>
+      </section>
+      <section>
+        <p>
+          <h2> Web Components </h2>
+          <ul>
+            <li>All power of JS</li>
+            <li>Inheritence, abstraction all proven concepts adopted (OO/functional developers welcome)</li>
+            <li>Different implementations(x-tags,bosanic) and what's special with Polymer.</li>
+            <!-- <li>Rob Dodson explains Polymer here (each concept introduced 0.5.5 v)</li> -->
+            <li>Web Components today and tomorrow, What they are, Why shall we care ?</li>
+            <li>Addy explains Components to save <a href="https://speakerdeck.com/addyosmani/componentize-the-web-back-to-the-browser" target="_blank">web </a></li>
+          </ul>
+        </p>
+      </section>
+      <section>
+        <h2> Polymer </h2>
+        <p>
+          <ul>
+            <li>Polymer 1.0 - <a href="http://www.slideshare.net/HendrikEbbers/web-components-polymer-10-webinale-berlin?qid=cd3d9228-4388-41a7-b529-ebb19fa81afb&v=qf1&b=&from_search=1" target="_blank">Intro to Polymer 1.0 - 1 (Hendrik Ebbers)</a></li>
+            <li><a href="http://www.slideshare.net/MariaClaraSantana1/polymer-10-easier-faster-better?related=1" target="_blank">Intro to Polymer 1.0 - 2 </a></li>
+            <li><a href="https://speakerdeck.com/addyosmani/material-design-for-the-web" target="_blank">Material Design  - Addy’s deck</a></li>
+            <li>New in v1.0 <a href="http://slides.com/jamesmilner/fullstackjs#/12" target="_blank"> 0.5.5 v/s 1.0 </a></li>
+          </ul>
+        </p>
+      </section>
+      <section>
+        <p> Different philosophies - React and Polymer </p>
+        <ul>
+          <li>React and Polymer</li>
+          <li><ul><li>React philosophy and my views (Flipboard story, Object.observe)</li></ul></li>
+          <li>There's an element for 'that' approach</li>
+          <li>Examples - <a href="http://poly-air.appspot.com" target="_blank">Poly-air</a>, <a href="https://poly-mail.appspot.com/" target="_blank">poly-gmail</a>, <a href="https://jakearchibald.github.io/trained-to-thrill/" target="_blank">train to thrill</a>, <a href="http://saurshaz-dashboard.appspot.com" target="_blank">dolphin one</a> , <a href="https://github.com/GoogleChrome/ioweb2015" target="_blank">google io 15</a> etc</li>
+      </section>
+      <section>
+        <section>
+          <h2>How we'll get there</h2>
+          <p>&darr;</p>
+        </section>
+        <section>
+          <p> Let us teh codez :-)</p>
+          <p>&darr;</p>
+        </section>
+        <section>
+          <h2>How we start coding a Polymer App ?</h2>
+          <ul>
+            <li>Let's look at an ideal way to proceed <a href="https://developers.google.com/web/tools/polymer-starter-kit/" target="_blank">PSK</a></li>
+            <li><a href="http://polymerelements.github.io/app-layout-templates/" target="_blank">Layout options</a></li>
+            <li><a href="https://github.com/GoogleWebComponents" target="_blank">Google Components</a></li>
+          </ul>
+        </section>
+      </section>
+      <section>
+        <section>
+          <h2>BIG Demo</h2>
+          <p>&darr;</p>
+        </section>
+        <section>
+          <h3>Tools in Play</h3>
+          <p>
+            <code>
+                <ul>
+                <li>Bower</li>
+                <li>Gulp</li>
+                <li>Polymer</li>
+                <li>BrowserSync</li>
+                </ul>
+            </code>
+          </p>
+        </section>
+        <section>
+          <h3><a href="https://developers.google.com/web/tools/polymer-starter-kit/" target="_blank">Polymer Starter toolkit</a></h3>
+          <p>
+            <code>
+                <ul>
+                <li>Clone,setup and run</li>
+                <li>gulp serve</li>
+                </ul>
+            </code>
+          </p>
+        </section>
+        <section>
+          <h3> Let's write an element </h3>
+          <p>
+            <code>
+                <ul>
+                <li>Start with a basic element</li>
+                <li>Make it advanced</li>
+                <li>Start with a basic usable listing element</li>
+                <li>Abstract it in a way it becomes reusable</li>
+                <li>
+                    <ul>
+                        <li>list of songs</li>
+                        <li>list of items to shop</li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        <li>Search an element (<a href="https://customelements.io" target="_blank"> custom elements </a>)</li>
+                        <li>Use it in our App</li>
+                    </ul>
+                </li>
+                </ul>
+            </code>
+          </p>
+        </section>
+      </section>
+      <!--
+
+
+
+    -
+
+    -
+
+         -->
+      <section>
+        <h3>There's an 'element' for 'that'</h3>
+        <ul>
+          <li><a href=" https://elements.polymer-project.org/" target="_blank"> Available elements </a></li>
+          <li><a href="https://component.kitchen/" target="_blank"> Component Kitchen </a></li>
+          <li><a href="https://customelements.io/" target="_blank"> Custom Elements </a></li>
+          <li><a href="https://github.com/GoogleWebComponents" target="_blank"> Google </a></li>
+        </ul>
+      </section>
+      <section>
+        <h3>Mobile app using Polymer code</h3>
+        <ul>
+          <li><a href="https://github.com/saurshaz/polymer-one-cordova" target="_blank">wrap as installable, use cordova</a> </li>
+          <li>Minus side, terribly slow v/s native.same as ionic or any other phone gap/cordova technology</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Optimizations and Performances</h2>
+        <ul>
+          <li>Vulcanization (HTML imports)</li>
+          <li>Polymer.imports</li>
+          <li><a href="http://www.html5rocks.com/en/tutorials/service-worker/introduction/">ServiceWorkers Platinum components </a></li>
+          <small>A service worker is a script that is run by your browser in the background, separate from a web page, opening the door to features which don't need a web page or user interaction. In the future this will include</small>
+          <ul>
+            <li><small>push messages, background sync,and geofencing,</small></li>
+            <li><small>but the first feature it will launch with is the ability to intercept and handle network requests, including programmatically managing a cache of responses.</small></li>
+            </pre>
+            <li>shady to shadow DOM</li>
+          </ul>
+      </section>
+      </section>
+      <section>
+        <h2>Conclusion</h2>
+      </section>
+      <section>
+        <h2>Thanks!</h2>
+        <p>
+          <small>Created by <a href="http://github.com/saurshaz">Saurabh Sharma</a> / <a href="http://about.me/saurshaz">@saurshaz</a></small>
+        </p>
+      </section>
+      <section>
+        <h3>Questions?</h3>
+      </section>
+    </div>
+  </div>
+  <script src="lib/js/head.min.js"></script>
+  <script src="js/reveal.min.js"></script>
+  <script>
+  // Full list of configuration options available here:
+  // https://github.com/hakimel/reveal.js#configuration
+  Reveal.initialize({
+    controls: true,
+    progress: true,
+    history: true,
+    center: true,
+
+    theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+    transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/fade/none
+
+    // Parallax scrolling
+    // parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+    // parallaxBackgroundSize: '2100px 900px',
+
+    // Optional libraries used to extend on reveal.js
+    dependencies: [{
+      src: 'lib/js/classList.js',
+      condition: function() {
+        return !document.body.classList;
+      }
+    }, {
+      src: 'plugin/markdown/marked.js',
+      condition: function() {
+        return !!document.querySelector('[data-markdown]');
+      }
+    }, {
+      src: 'plugin/markdown/markdown.js',
+      condition: function() {
+        return !!document.querySelector('[data-markdown]');
+      }
+    }, {
+      src: 'plugin/highlight/highlight.js',
+      async: true,
+      callback: function() {
+        hljs.initHighlightingOnLoad();
+      }
+    }, {
+      src: 'plugin/zoom-js/zoom.js',
+      async: true,
+      condition: function() {
+        return !!document.body.classList;
+      }
+    }, {
+      src: 'plugin/notes/notes.js',
+      async: true,
+      condition: function() {
+        return !!document.body.classList;
+      }
+    }]
+  });
+  </script>
+</body>
+
+</html>
